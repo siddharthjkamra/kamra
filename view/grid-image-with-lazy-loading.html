@@ -1,0 +1,135 @@
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
+<title>Grid Image with Lazy Loading</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  background: #F1F1FA;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>Responsive Image Grid with Lazy Loading</h1>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="image/img1.jpg" style="width:100%">
+    <img src="image/img2.jpg" style="width:100%">
+    <img src="image/img3.jpg" style="width:100%">
+    <img src="image/img4.jpg" style="width:100%">
+    <img src="image/img5.jpg" style="width:100%">
+    <img src="image/img6.jpg" style="width:100%">
+    <img src="image/img7.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="image/img8.jpg" style="width:100%">
+    <img src="image/img9.jpg" style="width:100%">
+    <img src="image/img10.jpg" style="width:100%">
+    <img src="image/img11.jpg" style="width:100%">
+    <img src="image/img12.jpg" style="width:100%">
+    <img src="image/img13.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="image/img14.jpg" style="width:100%">
+    <img src="image/img15.jpg" style="width:100%">
+    <img src="image/img16.jpg" style="width:100%">
+    <img src="image/img17.jpg" style="width:100%">
+    <img src="image/img18.jpg" style="width:100%">
+    <img src="image/img19.jpg" style="width:100%">
+      </div>
+  <div class="column">
+    <img src="image/img20.jpg" style="width:100%">
+    <img src="image/img21.jpg" style="width:100%">
+    <img src="image/img22.jpg" style="width:100%">
+    <img src="image/img23.jpg" style="width:100%">
+    <img src="image/img24.jpg" style="width:100%">
+    <img src="image/img25.jpg" style="width:100%">
+    <img src="image/img26.jpg" style="width:100%">
+  </div>
+</div>
+
+</body>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyloadImages = document.querySelectorAll("img.lazy");    
+  var lazyloadThrottleTimeout;
+  
+  function lazyload () {
+    if(lazyloadThrottleTimeout) {
+      clearTimeout(lazyloadThrottleTimeout);
+    }    
+    
+    lazyloadThrottleTimeout = setTimeout(function() {
+        var scrollTop = window.pageYOffset;
+        lazyloadImages.forEach(function(img) {
+            if(img.offsetTop < (window.innerHeight + scrollTop)) {
+              img.src = img.dataset.src;
+              img.classList.remove('lazy');
+            }
+        });
+        if(lazyloadImages.length == 0) { 
+          document.removeEventListener("scroll", lazyload);
+          window.removeEventListener("resize", lazyload);
+          window.removeEventListener("orientationChange", lazyload);
+        }
+    }, 20);
+  }
+  
+  document.addEventListener("scroll", lazyload);
+  window.addEventListener("resize", lazyload);
+  window.addEventListener("orientationChange", lazyload);
+});
+</script>

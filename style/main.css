@@ -1,0 +1,144 @@
+@font-face {
+  font-family: SpaceMono-Regular;
+  src: url(../assets/SpaceMono-Regular.ttf);
+}
+
+@font-face {
+  font-family: SpaceMono-Italic;
+  src: url(../assets/SpaceMono-Italic.ttf);
+}
+
+@font-face {
+  font-family: SpaceMono-Bold;
+  src: url(../assets/SpaceMono-Bold.ttf);
+}
+
+@font-face {
+  font-family: SpaceMono-BoldItalic;
+  src: url(../assets/SpaceMono-BoldItalic.ttf);
+}
+
+* {
+				margin: 0px;
+				font-family: SpaceMono-Regular;
+}
+header {
+				background-color: #121212;
+				padding: 10px;
+}
+
+section {
+    background-color: #83bfff;
+				padding: 10px;
+				font-family: SpaceMono-Regular;
+}
+
+.maintitle {
+    background-color: black;
+    padding: 10px;
+    margin: 2px;
+			 color: #ffffff;
+			 text-align: center;
+}
+
+section ul {
+				list-style: none;
+				padding: 10px;
+				font-size: 17px;
+				color: #000000;
+}
+
+section li {
+				padding: 5px;
+				border-bottom: 1px solid black;
+}
+
+section a {
+				text-decoration: none;
+				color: black;
+}
+
+section h3 {
+				font-size: 20px;
+				padding-top: 20px;
+				padding-left: 10px;
+				border-bottom: 2px solid black;
+}
+
+/* Menu Hamburger */
+
+.menu {
+				float: right;
+}
+
+.menucontainer {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 30px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+/* Sidebar */
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #121212;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}

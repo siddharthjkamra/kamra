@@ -105,6 +105,7 @@ section h3 {
   color: #ffffff;
   display: block;
   transition: 0.3s;
+  border-bottom: 1px solid white;
 }
 
 .sidebar a:hover {
@@ -114,9 +115,11 @@ section h3 {
 .sidebar .closebtn {
   position: absolute;
   top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+  right: 0;
+  font-size: 20px;
+  border: 2px solid white;
+  margin: 10px;
+  padding: 10px;
 }
 
 .openbtn {

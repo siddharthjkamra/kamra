@@ -5,7 +5,7 @@
 
 - 🔭 I’m currently working on [KamraCSS](https://siddharthkamra.in/kamracss)
 
-- 👨‍💻 All of my projects are available at [siddharthkamra.in](siddharthkamra.in)
+- 👨‍💻 Learn frontend from [siddharthkamra.in](https://siddharthkamra.in)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">

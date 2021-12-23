@@ -3,7 +3,7 @@
 
 <p align="left"> <a href="https://twitter.com/sidharthkamra" target="blank"><img src="https://img.shields.io/twitter/follow/sidharthkamra?logo=twitter&style=for-the-badge" alt="sidharthkamra" /></a> </p>
 
-- 🔭 I’m currently working on [KamraCSS](siddharthkamra.in/kamracss)
+- 🔭 I’m currently working on [KamraCSS](https://siddharthkamra.in/kamracss)
 
 - 👨‍💻 All of my projects are available at [siddharthkamra.in](siddharthkamra.in)
 

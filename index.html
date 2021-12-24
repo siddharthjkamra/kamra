@@ -4,8 +4,8 @@
 				<meta charset="UTF-8">
 				<meta name="viewport" content="width=device-width, initial-scale=1">
 				<title>Siddharth Kamra - Blog for Developers</title>
-				<meta name="description" content="Learn Front-end directly from Experts. We don't just make HelloWorld only tutorials.">
-<link rel="icon" href="assets/favicon.png" type="image/gif" sizes="32x32">
+				<meta name="description" content="Learn Front-end directly from Experts. We don't just make Hello World only tutorials.">
+				<link rel="icon" href="assets/favicon.png" type="image/gif" sizes="32x32">
 				<link rel="stylesheet" href="style/main.css"></link>
 </head>
 <body>
@@ -28,7 +28,7 @@
 					<div class="maintitle"><h2>Learn Front-end from Experts</h2></div>
 					<h3>Front-end Basics</h3>
 					<ul>
-									<a href="#html"><li>Learn HTML</li></a>
+									<a href="#html" onclick="javascript:document.getElementById('page-loader').style.display='block';"><li>Learn HTML</li></a>
 									<a href="#css"><li>Learn CSS</li></a>
 									<a href="#javascript"><li>Learn Javascript</li></a>
 					</ul>
@@ -47,10 +47,16 @@
 					<h3>Pre-made from KamraCSS</h3>
 					<ul>
 									<a href="#templates"><li>Templates</li></a>
-									<a href="#cdn"><li>KamraCSS CDN</li></a>
+									<a href="https://kamracss.pages.dev" onclick="javascript:document.getElementById('page-loader').style.display='block';"><li>KamraCSS CDN</li></a>
 					</ul>
-					</section>
-<center style="padding-top: 10px; padding-bottom: 10px;"><h3>Coming Soon</h3></center>	
+					</section>	
+					
+<!-- Page Loader -->
+<div id="page-loader">
+		<h3>Loading page...</h3>
+		<img src="assets/loader.gif" alt="loader">
+	</div>
+
 <!-- Javascript -->	
 <script>
 function openNav() {

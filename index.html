@@ -7,6 +7,7 @@
 				<meta name="description" content="Learn Front-end directly from Experts. We don't just make Hello World only tutorials.">
 				<link rel="icon" href="assets/favicon.png" type="image/gif" sizes="32x32">
 				<link rel="stylesheet" href="style/main.css"></link>
+				<link rel="stylesheet" href="style/maintanence.css"></link>
 </head>
 <body>
 				<header>
@@ -50,7 +51,21 @@
 									<a href="https://kamracss.pages.dev" target="_blank"><li>KamraCSS CDN</li></a>
 					</ul>
 					</section>	
-
+					
+<!-- Popup -->
+<div id="modalOverlay">
+		<div class="modalPopup">
+			<div class="headerBar">
+				<img src="assets/kamra-dev-r.png" alt="Logo" width="150px;">
+			</div>
+			<div class="modalContent">
+	   <h2>launching soon</h2>
+					 <p>this website is under construction 🚧</p>
+					 <button class="buttonStyle" id="buttonclose">Close</button>
+			</div>
+		</div>
+	</div>
+	
 <!-- Javascript -->	
 <script>
 function openNav() {
@@ -62,6 +77,13 @@ function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementById("main").style.marginLeft= "0";
 }
+</script>
+<script>
+window.onload = function() {
+  document.getElementById('buttonclose1').onclick = function() {
+    document.getElementById('modalOverlay').style.display = 'none'
+  };
+};
 </script>
 </body>
 </html>

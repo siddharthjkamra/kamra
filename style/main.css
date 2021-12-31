@@ -66,6 +66,20 @@ section h3 {
 				border-bottom: 2px solid black;
 }
 
+header .gotohome {
+    background-color: #edcb04;
+			 color: #121212;
+				border: 1px solid #ffffff;
+				padding: 5px;
+				position: absolute;
+				right: 0.5em;
+				border-radius: 2px;
+}
+
+.ic-img {
+				width: 10px;
+				padding-left: 1px;
+}
 /* Menu Hamburger */
 
 .menu {
@@ -145,4 +159,28 @@ section h3 {
 @media screen and (max-height: 450px) {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
+}
+
+footer {
+				background-color: #121212;
+				padding: 8px;
+				color: #ffffff;
+}
+
+footer p {
+				text-align: center;
+}
+
+footer ul {
+				text-align: center;
+				padding: 0;
+}
+
+footer li {
+				display: inline-block;
+}
+
+footer li a {
+				color: #ffffff;
+				text-decoration: none;
 }

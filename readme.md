@@ -15,7 +15,7 @@
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
-<p align="left"><a href="https://kamracss.pages.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/siddharthkamra/kamra/main/assets/kamracss.png" alt="kamracss" width="50" height="50"/></a><a href="https://angular.io" target="_blank" rel="noreferrer"> <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular" width="50" height="50"/> </a> <a href="https://angular.io" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original-wordmark.svg" alt="angularjs" width="50" height="50"/> </a></p>
+<p align="left"><a href="https://kamracss.pages.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/siddharthkamra/kamra/main/assets/kamracss.png" alt="kamracss" width="50" height="50"/></a><a href="https://angular.io" target="_blank" rel="noreferrer"> <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular" width="50" height="50"/> </a></p>
 
 <h3 align="left">Support:</h3>
 <p><a href="https://www.buymeacoffee.com/kamra"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" width="150" alt="kamra" /></a></p><br><br>

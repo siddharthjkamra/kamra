@@ -65,22 +65,20 @@
 			</div>
 		</div>
 	</div>
-	
-<!-- Javascript -->	
-<script>
-function openNav() {
-  document.getElementById("mySidebar").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-}
 
-function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
-}
-</script>
+<footer>
+				<ul>
+				<li><a href="#about">About</a></li>				
+				<li><a href="#privacy">Privacy</a></li>
+				<li><a href="#contact">Contact</a></li>
+				</ul>
+				<p>© Kamra Developers 2021 - All rights reserved</p>
+</footer>	
+<!-- Javascript -->	
+<script src="style/sidebar.js"></script>
 <script>
 window.onload = function() {
-  document.getElementById('buttonclose1').onclick = function() {
+  document.getElementById('buttonclose').onclick = function() {
     document.getElementById('modalOverlay').style.display = 'none'
   };
 };

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+				<title>Age Calculator Project - Kamra Developers</title>
+				<link rel="stylesheet" href="../style/main.css"></link>
+</head>
+<body>
+				<style>
+.btm_btns {
+width: 100%;
+text-align: center;
+}
+
+.btm_pbtn {
+    background-color: #83bfff;
+    color: #fff;
+    text-decoration: none;
+    padding:10px;
+    margin:4px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    width: 100px;
+    border-radius:5px;
+    border: none;
+}
+
+.hline {
+    border-top: 1px solid #ab183d;
+}
+
+#container {
+	text-align: center;
+	border:1px solid #121212;
+	margin:10px;
+	border-radius: 5px;
+}
+
+
+#form h2{
+	font-size:16px;
+	padding:10px;
+	border-bottom:1px solid #ab183d;
+	background-color: #eccb04;
+}
+
+#form .ageshow {
+    font-size:16px;
+	padding:10px;
+}
+
+input[type='text'] {
+	padding: 10px 30px 10px;
+	outline: 0;
+	text-align:center;
+	font-weight: bold;
+	border-radius: 5px;
+	border: 1px solid #121212;
+}
+
+#calbtn {
+	cursor: pointer;
+	background: #83bfff;
+	color: #FFF;
+	text-align:center;
+	font-size: 16px;
+	font-weight:bold;
+}
+
+#calbtn:hover, #calbtn:active {
+	background-color: #121212;
+	outline: 0;
+}
+
+span {
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	color: #121212;
+	background-color: #eccb04;
+	padding: 2px;
+	border-radius: 2px;
+}	
+</style>
+
+
+<div class="main-data">
+<div id="container">
+<form id="form" autocomplete="off">
+<h2>Age Calculator</h2>		
+<label for="date">
+<h2>Date of Birth </h2>
+<input type="text" maxlength="2" size="2" id="date" placeholder="dd" required />
+<input type="text" maxlength="2" size="2" id="month" placeholder="yy " autocomplete="on" class="age1" required />
+<input type="text" maxlength="4" size="4" id="year" placeholder="yyyy " required />
+</label>
+<hr class="hline">
+<label for="date2">
+<h2>Date of Today </h2>
+<input type="text" maxlength="2" size="2" id="date2" placeholder="Day" />
+<input type="text" maxlength="2" size="2" id="month2" placeholder="Month" class="age1" />
+<input type="text" maxlength="4" size="4" id="year2" placeholder="Year" />
+</label>
+<hr class="hline">
+<div class="btm_btns">
+<div class="btmbtn_sub sub1">
+<button id="calbtn" class="btm_pbtn pbtn1 hvr-pulse-grow">See Age </button>
+</div>
+</div>
+<hr class="hline">
+<p class="ageshow"><b>Your age is </b><span id="age"></span>&nbsp;&nbsp;&nbsp;
+<span id="months"></span>&nbsp;&nbsp;&nbsp;
+<span id="days"></span> </p>
+
+<script>
+var form = document.getElementById("form"),
+	bdate = document.getElementById("date"),
+	bmonth = document.getElementById("month"),
+	byear = document.getElementById("year"),
+	date = document.getElementById("date2"),
+	month = document.getElementById("month2"),
+	year = document.getElementById("year2"),
+	age = document.getElementById("age"),
+	days = document.getElementById("days"),
+	mons = document.getElementById("months"),
+	today = new Date();
+
+year.value = today.getFullYear();
+month.value = today.getMonth() + 1;
+date.value = today.getDate();
+
+form.addEventListener('submit', function(event) {
+	event.preventDefault();
+
+	var by = Number.parseFloat(byear.value),
+		bm = Number.parseFloat(bmonth.value),
+		bd = Number.parseFloat(bdate.value),
+		ty = Number.parseFloat(year.value),
+		tm = Number.parseFloat(month.value),
+		td = Number.parseFloat(date.value);
+
+	if (td < bd) {
+		days.innerHTML = (td - bd + 30) + ' Days';
+		tm = tm - 1;
+	} else {
+		days.innerHTML = (td - bd) + ' Days '
+	}
+
+	if (tm < bm) {
+		months.innerHTML = (tm - bm + 12) + ' Months';
+		ty = ty - 1;
+	} else {
+		months.innerHTML = (tm - bm) + ' Months '
+	}
+
+	age.innerHTML = " " + (ty - by) + ' Years ';
+
+});
+</script>
+</body>
+</html>

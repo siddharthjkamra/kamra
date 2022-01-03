@@ -1,0 +1,26 @@
+input[type=text], input[type=email], textarea {
+				width: 80%;
+				padding: 8px;
+				border-radius: 2px;
+				border: 1px solid #121212;
+				color: #121212;
+}
+
+input[type=button] {
+				background-color: #121212;
+				color: #ffffff;
+				border: none;
+				font-size: 17px;
+				padding: 10px;
+				border-radius: 2px;
+				width: 30%;
+}
+
+input[type=button]:hover {
+				background-color: #edcb04;
+				color: #121212;
+}
+
+label {
+				font-size: 18px;
+}

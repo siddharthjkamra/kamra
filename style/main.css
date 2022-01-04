@@ -66,19 +66,14 @@ section h3 {
 				border-bottom: 2px solid black;
 }
 
-header .gotohome {
-    background-color: #edcb04;
-			 color: #121212;
-				border: 1px solid #ffffff;
-				padding: 5px;
-				position: absolute;
-				right: 0.5em;
-				border-radius: 2px;
-}
-
 .ic-img {
 				width: 10px;
 				padding-left: 1px;
+}
+
+.ic-check {
+				vertical-align: middle;
+				width: 15px;
 }
 /* Menu Hamburger */
 

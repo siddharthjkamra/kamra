@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+				<title>CSS Texts</title>
+				<link rel="stylesheet" href="../../style/main.css"></link>
+				<link rel="stylesheet" href="../../style/kamra_support.css"></link>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js"></script>
+</head>
+<body>
+<header><img src="../../assets/kamra-dev-r.png" alt="Siddharth Kamra Logo" width="120px" style="vertical-align: middle;"><span style="vertical-align: middle; border-left: 1px solid white; padding-left: 5px; color: white">CSS Texts</span></header>
+<section>
+<p>Home<img src="../../assets/next.png" class="ic-img"> Learn CSS<img src="../../assets/next.png" class="ic-img"> CSS Texts</p>
+<h3>Colors</h3><br>
+
+<div class="container">
+<pre><code class="language-css">				
+<xmp>
+body {
+  background-color: maroon;
+  color: black;
+}
+
+h1 {
+  background-color: black;
+  color: white;
+}
+
+div {
+  background-color: blue;
+  color: white;
+}
+
+.content {
+  background-color: maroon;
+  color: white;
+}
+</xmp>
+</code></pre>
+</div>
+
+<h3>Text Alignment</h3><br>
+<div class="container">
+<pre><code class="language-css">				
+<xmp>
+/* Text Align */
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: left;
+}
+
+h3 {
+  text-align: right;
+}
+
+h3 {
+  text-align: justify;
+}
+</xmp>
+</code></pre>
+<br>
+<pre><code class="language-css">				
+<xmp>
+/* Last Line Align */
+
+p.x {
+  text-align-last: right;
+}
+
+p.y {
+  text-align-last: center;
+}
+
+p.z {
+  text-align-last: justify;
+}
+</xmp>
+</code></pre>
+<br>
+<pre><code class="language-css">				
+<xmp>
+/* Text Direction
+Unicode-bidi changes direction */
+
+p {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+</xmp>
+</code></pre>
+<br>
+<pre><code class="language-css">				
+<xmp>
+/* Vertical alignment */
+
+img.a {
+  vertical-align: baseline;
+}
+
+img.b {
+  vertical-align: text-top;
+}
+
+img.c {
+  vertical-align: text-bottom;
+}
+
+img.d {
+  vertical-align: sub;
+}
+
+img.e {
+  vertical-align: super;
+}
+</xmp>
+</code></pre>
+</div>
+
+<h3>Text Decoration</h3><br>
+<div class="container">
+<pre><code class="language-css">				
+<xmp>
+h2 {
+  text-decoration: none;				
+}
+				
+h2 {
+  text-decoration: overline;
+}
+
+h3 {
+  text-decoration: line-through;
+}
+
+h4 {
+  text-decoration: underline;
+}
+</xmp>
+</code></pre>
+</div>
+
+<h3>Text Transformation</h3><br>
+<div class="container">
+<pre><code class="language-css">				
+<xmp>
+p.uppercase {
+  text-transform: uppercase;
+}
+
+p.lowercase {
+  text-transform: lowercase;
+}
+
+p.capitalize {
+  text-transform: capitalize;
+}				
+</xmp>
+</code></pre>
+</div>
+
+<h3>Text Spacing</h3><br>
+<div class="container">
+<pre><code class="language-css">				
+<xmp>
+/* Text Indentation */
+
+p {
+  text-indent: 50px;
+}
+</xmp>
+</code></pre>
+<br>
+
+<pre><code class="language-css">				
+<xmp>
+/* Letter Spacing */
+
+h1 {
+  letter-spacing: 5px;
+}
+
+h2 {
+  letter-spacing: -2px;
+}
+</xmp>
+</code></pre><br>
+
+<pre><code class="language-css">				
+<xmp>
+/* Line Height */
+
+p.small {
+  line-height: 0.8;
+}
+
+p.big {
+  line-height: 1.8;
+}
+</xmp>
+</code></pre><br>
+
+<pre><code class="language-css">				
+<xmp>
+/* Word Spacing */				
+				
+p.one {
+  word-spacing: 10px;
+}
+
+p.two {
+  word-spacing: -2px;
+}				
+</xmp>
+</code></pre>	<br>
+
+<pre><code class="language-css">				
+<xmp>
+/* White Space */
+
+p {
+  white-space: nowrap;
+}
+</xmp>
+</code></pre>				
+</div>
+
+<h3>Text Shadow</h3><br>
+
+<div class="container">
+<pre><code class="language-css">				
+<xmp>
+/* Example 1 */
+
+h1 {
+  text-shadow: 2px 2px;
+}
+
+/* Example 2 */
+
+h1 {
+  text-shadow: 2px 2px red;
+}
+
+/* Example 3 */
+
+h1 {
+  text-shadow: 2px 2px 5px red;
+}
+
+/* Example 4 */
+
+h1 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+/* Example 5 */
+
+h1 {
+  text-shadow: 0 0 3px #ff0000;
+}
+
+/* Example 6 */
+
+h1 {
+  text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+}
+
+/* Example 7 */
+
+h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+</xmp>
+</code></pre>				
+</div>				
+</div>
+</section>	
+
+<footer>
+				<ul>
+				<li><a href="#about">About</a></li>				
+				<li><a href="#privacy">Privacy</a></li>
+				<li><a href="../../contact.html">Contact</a></li>
+				</ul>
+				<ul>
+			 <li><a href="https://twitter.com/sidharthkamra" target="_blank"><img src="../../assets/social/twitter.svg" alt="Twitter Logo"></a></li>
+			 <li><a href="https://instagram.com/sidharthkamra" target="_blank"><img src="../../assets/social/instagram.svg" alt="Instagram Logo"></a></li>
+			 <li><a href="https://facebook.com/thekamra" target="_blank"><img src="../../assets/social/facebook.svg" alt="Facebook Logo"></a></li>
+				</ul>
+				<p>© Kamra Developers 2021 - All rights reserved</p>
+</footer>
+<!-- Javascript -->
+<script src="../../style/pre.js"></script>
+</body>
+</html>

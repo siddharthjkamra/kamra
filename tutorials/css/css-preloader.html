@@ -10,8 +10,8 @@
 </head>
 
 <style>
-/* Center the loader */
-#loader {
+/* Center the KamraLoader */
+#KamraLoader {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -55,7 +55,7 @@
   to{ bottom:0; opacity:1 }
 }
 
-#myDiv {
+#myContent {
   display: none;
   text-align: center;
 }
@@ -64,9 +64,9 @@
 <!-- Real Code -->
 <body onload="myFunction()" style="margin:0;">
 
-<div id="loader"></div>
+<div id="KamraLoader"></div>
 
-<div style="display:none;" id="myDiv" class="animate-bottom">
+<div style="display:none;" id="myContent" class="animate-bottom">
   <img src="../../assets/kamra-dev-r.png" alt="Kamra Developers" width="120px" style="margin-top: 10px;">
   <p style="background-color: #121212; color: white;">Yay, It works! Copy the code<br>from below <img src="../../assets/arrow-down-yellow.png" width="20px"></p>
 <br>
@@ -77,8 +77,8 @@
 <pre><code class="language-html">				
 <xmp>
 <body onload="myFunction()" style="margin:0;">
-<div id="loader"></div>
-<div style="display:none;" id="myDiv" class="animate-bottom">
+<div id="KamraLoader"></div>
+<div style="display:none;" id="myContent" class="animate-bottom">
 <!-- Put your content here -->
 </div>
 </body>
@@ -88,8 +88,8 @@
 <!-- Pre Code CSS -->
 <pre><code class="language-css">				
 <xmp>
-/* Center the loader */
-#loader {
+/* Center the KamraLoader */
+#KamraLoader {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -133,7 +133,7 @@
   to{ bottom:0; opacity:1 }
 }
 
-#myDiv {
+#myContent {
   display: none;
   text-align: center;
 }			
@@ -150,13 +150,14 @@ function myFunction() {
 }
 
 function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("myDiv").style.display = "block";
+  document.getElementById("KamraLoader").style.display = "none";
+  document.getElementById("myContent").style.display = "block";
 }
 </xmp>			
 </code></pre>	
 <!-- Pre Code Ends -->
 </div>
+<br>
 <!-- Script -->
 <script>
 var myVar;
@@ -166,8 +167,8 @@ function myFunction() {
 }
 
 function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("myDiv").style.display = "block";
+  document.getElementById("KamraLoader").style.display = "none";
+  document.getElementById("myContent").style.display = "block";
 }
 </script>
 <script src="../../style/pre.js"></script>

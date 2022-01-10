@@ -28,10 +28,29 @@ header {
 				padding: 10px;
 }
 
+.inner-header {
+			background-color: #121212;
+			padding: 10px;	
+}
+
 section {
     background-color: #001a21;
 				padding: 10px;
 				font-family: SpaceMono-Regular;
+}
+
+.inner-section {
+    background-color: #83bfff;
+				padding: 10px;
+				font-family: SpaceMono-Regular;
+}
+
+.inner-section h3 {
+				color: #121212;
+				font-size: 20px;
+				padding-top: 20px;
+				padding-left: 10px;
+				border-bottom: 2px solid #121212;
 }
 
 .hero {
@@ -106,6 +125,7 @@ section h3 {
 				padding: 10px;
 				text-decoration: none;
 }
+
 /* Menu Hamburger */
 
 .menu {

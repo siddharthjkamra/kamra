@@ -19,24 +19,24 @@
 }
 
 * {
-				margin: 0px;
-				font-family: SpaceMono-Regular;
+margin: 0px;
+font-family: SpaceMono-Regular;
 }
 
 header {
-				background-color: #ffffff;
-				padding: 10px;
+background-color: #ffffff;
+padding: 10px;
 }
 
 .inner-header {
-			background-color: #121212;
-			padding: 10px;	
+background-color: #121212;
+padding: 10px;	
 }
 
 section {
     background-color: #001a21;
-				padding: 10px;
-				font-family: SpaceMono-Regular;
+padding: 10px;
+font-family: SpaceMono-Regular;
 }
 
 .inner-section {
@@ -241,4 +241,10 @@ footer li a {
 footer a {
 				color: #ffffff;
 				text-decoration: none;
+}
+
+@media (min-width: 500px;) {
+footer li a {
+font-size: 16px;
+}
 }

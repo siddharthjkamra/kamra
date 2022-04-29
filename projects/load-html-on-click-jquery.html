@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+				<title>Load HTML in DIV on Click using jQuery</title>
+				<link rel="stylesheet" href="../style/main.css"></link>
+				<link rel="stylesheet" href="../style/kamra_support.css"></link>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js"></script>
+
+<!-- Live -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://quiz.siddharthkamra.in/styles.css"></link>
+ <script>
+        $(function () {
+            $('#nav a').on('click', function (e) {
+                e.preventDefault();
+                var page = $(this).attr('href');
+                $('#content').load(page);
+            });
+        });
+    </script>
+ 
+<div class="navbar">
+    <div id="nav">
+        <a href="https://quiz.siddharthkamra.in/page1.html">Home</a>
+        <a href="https://quiz.siddharthkamra.in/page2.html">Fee Payment</a>
+        <a href="https://quiz.siddharthkamra.in/page3.html">Application Form</a>
+        <a href="https://quiz.siddharthkamra.in/page4.html">Print</a>
+    </div>
+</div>
+
+    <div id="content">
+     <img src="https://quiz.siddharthkamra.in/files/quiz.jpg" width="100%"/>
+    </div>
+
+
+
+<!-- Code -->
+<div style="margin-top: 50px;"></div>
+<div class="container">
+<pre><code class="language-html">			
+<xmp>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://quiz.siddharthkamra.in/styles.css"></link>
+ <script>
+        $(function () {
+            $('#nav a').on('click', function (e) {
+                e.preventDefault();
+                var page = $(this).attr('href');
+                $('#content').load(page);
+            });
+        });
+    </script>
+ 
+<div class="navbar">
+    <div id="nav">
+        <a href="https://quiz.siddharthkamra.in/page1.html">Home</a>
+        <a href="https://quiz.siddharthkamra.in/page2.html">Fee Payment</a>
+        <a href="https://quiz.siddharthkamra.in/page3.html">Application Form</a>
+        <a href="https://quiz.siddharthkamra.in/page4.html">Print</a>
+    </div>
+</div>
+
+    <div id="content">
+     <img src="https://quiz.siddharthkamra.in/files/quiz.jpg" width="100%"/>
+    </div>
+</xmp>
+</code></pre>
+</div>
+<script src="../style/pre.js"></script>
+</body>
+</html>

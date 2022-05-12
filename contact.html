@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-				<meta charset="UTF-8">
-				<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-				<title>Contact Us</title>
-				<link rel="stylesheet" href="style/main.css"></link>
-				<link rel="stylesheet" href="style/contact.css"></link>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact</title>
+  <link rel="stylesheet" href="assets/main.css">
+<script src="assets/angular.min.js"></script>
 </head>
-<body>
-<div class="inner-header">
-<a href="/"><img src="assets/kamra-dev-r.png" alt="Siddharth Kamra Logo" width="120px"></a>
-				</div>
+
+<body ng-app="">
+<ng-include src="'get/header.html'"></ng-include>
+<center>
+<h2>Contact</h2>
+</center>
 <div class="inner-section">
-<p style="color: white;">Home<img src="assets/next.png" class="ic-img"> Contact Us</p>
-<br>
 <form>
 <label for="name">Name</label><br>
 <input type="text" id="name" required><br>
@@ -23,21 +23,13 @@
 <textarea id="message" rows="3" required></textarea><br>
 <input type="button" value="Submit">
 </form>
-<div style="padding-bottom: 500px;"></div>
+<center>
+<p>Address</p>
+<address>
+Crypto Street, $ETH Apartment, ग्वालियर, मध्य प्रदेश, भारत
+</address>
+</center>
 </div>
-
-<footer>
-				<ul>
-				<li><a href="#about">About</a></li>				
-				<li><a href="#privacy">Privacy</a></li>
-				<li><a href="#contact">Contact</a></li>
-				</ul>
-				<ul>
-			 <li><a href="https://twitter.com/sidharthkamra" target="_blank"><img src="assets/social/twitter.svg" alt="Twitter Logo"></a></li>
-			 <li><a href="https://instagram.com/sidharthkamra" target="_blank"><img src="assets/social/instagram.svg" alt="Instagram Logo"></a></li>
-			 <li><a href="https://facebook.com/thekamra" target="_blank"><img src="assets/social/facebook.svg" alt="Facebook Logo"></a></li>
-				</ul>
-				<p>© Kamra Developers 2021 - All rights reserved</p>
-</footer>	
+<ng-include src="'get/footer.html'"></ng-include>
 </body>
 </html>

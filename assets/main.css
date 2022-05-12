@@ -143,6 +143,31 @@ section h3 {
         display: none;
       }
     }
+
+ /* NFTs */   
+    .nft {
+ text-align: center;
+ margin: 20px;
+ border: 2px solid black;
+ border-radius: 2px;
+}
+.nft p {
+  background-color: #121212;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.nft a {
+  background-color: yellow;
+  color: black;
+  text-decoration: none;
+}
+
+.nft img {
+  max-width: 400px;
+}
+   
+
 /* Sidebar */
 
 .sidebar {

@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+				margin: 0px;
+				font-family: 'Space Mono', monospace;
+}
+
+header {
+				background-color: #ffffff;
+				padding: 10px;
+}
+
+.inner-header {
+			background-color: #121212;
+			padding: 10px;	
+}
+
+section {
+    background-color: #001a21;
+				padding: 10px;
+				font-family: SpaceMono-Regular;
+}
+
+.inner-section {
+    background-color: #83bfff;
+				padding: 10px;
+				font-family: SpaceMono-Regular;
+}
+
+.inner-section h3 {
+				color: #121212;
+				font-size: 20px;
+				padding-top: 20px;
+				padding-left: 10px;
+				border-bottom: 2px solid #121212;
+}
+
+.hero {
+	background-color: #121212;
+	background-image: url(../assets/bg.jpg);
+ background-position: center;
+	background-size: cover;
+	color: #ffffff;
+	padding: 1em;
+ height: 500px;
+ position: relative;
+}
+
+.heroContent {
+		position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+}
+
+.maintitle {
+    background-color: #ffffff;    
+    padding: 10px;
+    margin: 2px;
+			 color: #001a21;
+			 text-align: center;
+}
+
+section ul {
+				list-style: none;
+				padding: 10px;
+				font-size: 17px;
+				color: #000000;
+}
+
+section li {
+				padding: 5px;
+				border-bottom: 1px solid #ffffff;
+}
+
+section a {
+				text-decoration: none;
+				color: #ffffff;
+}
+
+section h3 {
+    color: #ffffff;
+				font-size: 20px;
+				padding-top: 20px;
+				padding-left: 10px;
+				border-bottom: 2px solid #ffffff;
+}
+
+.ic-img {
+				width: 10px;
+				padding-left: 1px;
+}
+
+.ic-check {
+				vertical-align: middle;
+				width: 15px;
+}
+
+.spancode {
+				text-decoration: underline;
+}
+
+.getsource {
+				background-color: #83bfff;
+				color: #ffffff;
+				border: none;
+				padding: 10px;
+				text-decoration: none;
+}
+
+/* Menu Hamburger */
+
+.menu {
+				float: right;
+}
+
+.menucontainer {
+  display: inline-block;
+  cursor: pointer;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 2px;
+}
+
+@media screen and (min-width: 500px) {
+  .menucontainer {
+    display: none;
+  }
+}
+
+.header-right {
+    padding: 8px;
+  }
+  .header-right a {
+    text-decoration: none;
+    background-color: #121212;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 2px;
+  }
+    @media screen and (max-width: 500px) {
+      .header-right {
+        display: none;
+      }
+    }
+/* Sidebar */
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #121212;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+  border-bottom: 1px solid white;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 25px;
+  margin: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.sidebar .closebtn img {
+  width: 30px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+footer {
+				background-color: #121212;
+				padding: 8px;
+				color: #ffffff;
+}
+
+footer p {
+				text-align: center;
+}
+
+footer ul {
+				text-align: center;
+				padding: 5px;
+}
+
+footer li {
+				display: inline-block;
+}
+
+footer li a {
+				color: #ffffff;
+				text-decoration: none;
+}
+
+footer a {
+				color: #ffffff;
+				text-decoration: none;
+}

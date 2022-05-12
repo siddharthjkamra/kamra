@@ -2,7 +2,6 @@
 <h3 align="center">A passionate frontend developer</h3>
 
 <p align="left"> <a href="https://twitter.com/siddharthjkamra" target="blank"><img src="https://img.shields.io/twitter/follow/siddharthjkamra?logo=twitter&style=for-the-badge" alt="sidharthkamra" /></a> </p>
-
 - 🔭 I’m currently working on Frontend Framework.
 
 <h3 align="left">Connect with me:</h3>

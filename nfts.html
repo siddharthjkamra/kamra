@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NFTs</title>
+  <link rel="stylesheet" href="assets/main.css">
+  <script src="assets/angular.min.js"></script>
+</head>
+
+<body ng-app="">
+<ng-include src="'get/header.html'"></ng-include>
+
+	<style>
+		#loader {
+			border: 12px solid #f3f3f3;
+			border-radius: 50%;
+			border-top: 12px solid #444444;
+			width: 70px;
+			height: 70px;
+			animation: spin 1s linear infinite;
+		}
+		
+		@keyframes spin {
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+		
+		.center {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
+	</style>
+
+<main>
+	<div id="loader" class="center"></div>
+	<center>
+	<h2>NFTs</h2>
+	</center>
+
+<div class="nft">
+<img src="assets/Smokefallers_yellow_cover.png" width="100%">
+<p>Smokefallers Yellow</p>
+<a href="#">Get on Rarible</a>
+</div>
+
+<div class="nft">
+  <img src="assets/og.png" width="100%">
+  <p>The Smokefallers</p>
+  <a href="#">Get on Rarible</a>
+</div>
+
+<div class="nft">
+  <img src="assets/tape.png" width="100%">
+  <p>Smokefallers - Tape on Mouth</p>
+  <a href="#">Get on Rarible</a>
+</div>
+
+<div class="nft">
+  <img src="assets/laugh.png" width="100%">
+  <p>Smokefallers - Laugh</p>
+  <a href="#">Get on Rarible</a>
+</div>
+
+<div class="nft">
+  <img src="assets/quote.png" width="100%">
+  <p>Holy Quote</p>
+  <a href="#">Get on Rarible</a>
+</div>
+
+	<script>
+		document.onreadystatechange = function() {
+			if (document.readyState !== "complete") {
+				document.querySelector(
+				"main").style.visibility = "hidden";
+				document.querySelector(
+				"#loader").style.visibility = "visible";
+			} else {
+				document.querySelector(
+				"#loader").style.display = "none";
+				document.querySelector(
+				"main").style.visibility = "visible";
+			}
+		};
+	</script>
+</main>
+
+
+<ng-include src="'get/footer.html'"></ng-include>
+</body>
+</html>

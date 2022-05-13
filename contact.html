@@ -13,23 +13,52 @@
 <center>
 <h2>Contact</h2>
 </center>
-<div class="inner-section">
-<form>
-<label for="name">Name</label><br>
-<input type="text" id="name" required><br>
-<label for="email">Email</label><br>
-<input type="email" id="email" required><br>
-<label for="message">Message</label><br>
-<textarea id="message" rows="3" required></textarea><br>
-<input type="button" value="Submit">
-</form>
-<center>
-<p>Address</p>
-<address>
-Crypto Street, $ETH Apartment, ग्वालियर, मध्य प्रदेश, भारत
-</address>
-</center>
+<br>
+<style>
+.card {
+  background-color: whitesmoke;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  margin: 5px;
+}
+li a {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 2px;
+  border-radius: 2px;
+}
+</style>
+<center style="width: 80%; margin: 0 auto;">
+<div class="card">
+<h3>Social Connect</h3>
+<ul>
+<li><a href="https://rarible.com/siddharthjkamra" target="_blank">Rarible</a></li>
+<li><a href="https://twitter.com/siddharthjkamra" target="_blank">Twitter</a></li>
+</ul>
 </div>
+
+<div class="card">
+<h3>Write us</h3>
+<p>You can write us if you have any queries</p>
+<ul>
+<li><a href="#">Write</a></li>
+</ul>
+</div>
+
+<div class="card"><div class="card">
+<h3>NFTs</h3>
+<p>Contact us for NFT related problems</p>
+<ul>
+  <li><a href="#">Contact</a></li>
+</ul>
+</div>
+</center>
+
 <ng-include src="'get/footer.html'"></ng-include>
 </body>
 </html>

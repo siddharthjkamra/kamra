@@ -4,18 +4,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kamra Developers by Siddharth</title>
 <link rel="stylesheet" href="assets/main.css">
-<script src="assets/angular.min.js"></script>
+<script src="assets/main.js"></script>
+<script src="assets/sidebar.js"></script>
 </head>
 
-<body ng-app="">
-<ng-include src="'get/header_home.html'"></ng-include>
-
-<ng-include src="'get/main.html'"></ng-include>
-
-<ng-include src="'get/footer.html'"></ng-include>
+<body>
+<div katana="get/header_home.html"></div>
+<div katana="get/main.html"></div>
+<div katana="get/footer.html"></div>
 </body>
 
-  <!-- Project -->
-  <script src="assets/sidebar.js"></script>
+<script>
+includeHTML();
+</script>
 </body>
 </html>

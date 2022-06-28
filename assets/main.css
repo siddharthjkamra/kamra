@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 * {
-				margin: 0px;
-				font-family: 'Space Mono', monospace;
+  box-sizing: border-box;
+	font-family: 'Space Mono', monospace;
 }
 
 header {
@@ -144,17 +144,25 @@ section h3 {
       }
     }
 
- /* NFTs */   
-    .nft {
+ /* NFTs */ 
+ .nft-cover {
+ display: grid;
+ grid-template-columns: auto auto;
+ }
+ 
+ .nft {
+ width: auto;
  text-align: center;
- margin: 20px;
+ margin: 5px;
  border: 2px solid black;
  border-radius: 2px;
 }
+
 .nft p {
   background-color: #121212;
   color: #ffffff;
   padding: 10px;
+  margin: 0px;
 }
 
 .nft a {
@@ -166,12 +174,10 @@ section h3 {
 }
 
 .nft img {
-  max-width: 400px;
+  width: 100px;
 }
-   
 
 /* Sidebar */
-
 .sidebar {
   height: 100%;
   width: 0;
@@ -240,9 +246,10 @@ section h3 {
 }
 
 footer {
-				background-color: #121212;
-				padding: 8px;
-				color: #ffffff;
+				background-color: pink;
+				padding: 2px;
+				color: black;
+				border-radius: 0px 0px 5px 5px;
 }
 
 footer p {
@@ -251,7 +258,7 @@ footer p {
 
 footer ul {
 				text-align: center;
-				padding: 5px;
+				padding: 2px;
 }
 
 footer li {
@@ -259,11 +266,11 @@ footer li {
 }
 
 footer li a {
-				color: #ffffff;
+				color: black;
 				text-decoration: none;
 }
 
 footer a {
-				color: #ffffff;
+				color: black;
 				text-decoration: none;
 }

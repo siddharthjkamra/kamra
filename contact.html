@@ -5,38 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact</title>
   <link rel="stylesheet" href="assets/main.css">
-<script src="assets/angular.min.js"></script>
+ <script src="assets/main.js"></script>
 </head>
-
-<body ng-app="">
-<ng-include src="'get/header.html'"></ng-include>
+<body>
+<div katana="get/header.html"></div>
 <center>
 <h2>Contact</h2>
 </center>
-<br>
 <style>
 .card {
   background-color: whitesmoke;
+  padding: 2px;
+  margin-bottom: 2px;
 }
-ul {
+.contact {
   list-style-type: none;
   padding: 0;
 }
-li {
-  margin: 5px;
+.contact li {
+  margin: 2px;
+  padding: 5px;
 }
-li a {
-  background-color: black;
-  color: white;
+.contact li a {
+  width: 100%;
+  background-color: pink;
+  color: black;
   text-decoration: none;
-  padding: 2px;
-  border-radius: 2px;
+  padding: 5px;
 }
 </style>
-<center style="width: 80%; margin: 0 auto;">
+<center>
 <div class="card">
 <h3>Social Connect</h3>
-<ul>
+<ul class="contact">
 <li><a href="https://rarible.com/siddharthjkamra" target="_blank">Rarible</a></li>
 <li><a href="https://twitter.com/siddharthjkamra" target="_blank">Twitter</a></li>
 </ul>
@@ -45,20 +46,22 @@ li a {
 <div class="card">
 <h3>Write us</h3>
 <p>You can write us if you have any queries</p>
-<ul>
-<li><a href="#">Write</a></li>
+<ul class="contact">
+<li><a href="mailto:contat@siddharthkamra.in">Write</a></li>
 </ul>
 </div>
 
-<div class="card"><div class="card">
+<div class="card">
 <h3>NFTs</h3>
 <p>Contact us for NFT related problems</p>
-<ul>
-  <li><a href="#">Contact</a></li>
+<ul class="contact">
+  <li><a href="mailto:contat@siddharthkamra.in">Contact</a></li>
 </ul>
 </div>
 </center>
-
-<ng-include src="'get/footer.html'"></ng-include>
+<div katana="get/footer.html"></div>
+<script>
+includeHTML();
+</script>
 </body>
 </html>

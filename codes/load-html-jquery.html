@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>load html (jquery)</title>
+<link rel="stylesheet" href="/assets/main.css">
+</head>
+<body>
+<div class="code_page">
+<h2>load html (jquery)</h2>
+<p>load html on click without loading / refreshing browser using jquery</p>
+<textarea class="code_preview" cols="30" rows="10">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+<script>
+ $(function () {
+ $('#nav a').on('click', function
+ (e) {
+ e.preventDefault();
+ var page = $(this).attr('href');
+ $('#content').load(page);
+ });
+ });
+</script>
+
+<style>
+.main {
+  text-align: center;
+}
+.navbar {
+  padding: 10px;
+}
+.navbar a {
+  background-color: #121212;
+  color: #ffffff;
+  padding: 3px;
+}
+</style>
+
+<div class="main">
+<div class="navbar">
+<div id="nav">
+<a href="/demo/example-1.html">Page 1</a>
+<a href="/demo/example-2.html">Page 2</a>
+<a href="/demo/example-3.html">Page 3</a>
+<a href="/demo/example-4.html">Page 4</a>
+</div>
+</div>
+
+<div id="content">
+<img src="/demo/rio-de-janeiro.jpg" width="100%">
+<p>This is default content available on homepage directly.</p>
+</div>
+ 
+<p><a href="/codes">Go back to Home</a></p>
+</div>
+</textarea>
+
+<h3>Preview</h3>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+<script>
+ $(function () {
+ $('#nav a').on('click', function
+ (e) {
+ e.preventDefault();
+ var page = $(this).attr('href');
+ $('#content').load(page);
+ });
+ });
+</script>
+
+<style>
+.main {
+  text-align: center;
+}
+.navbar {
+  padding: 10px;
+}
+.navbar a {
+  background-color: #121212;
+  color: #ffffff;
+  padding: 3px;
+}
+</style>
+
+<div class="main">
+<div class="navbar">
+<div id="nav">
+<a href="/demo/example-1.html">Page 1</a>
+<a href="/demo/example-2.html">Page 2</a>
+<a href="/demo/example-3.html">Page 3</a>
+<a href="/demo/example-4.html">Page 4</a>
+</div>
+</div>
+
+<div id="content">
+<img src="/demo/rio-de-janeiro.jpg" width="100%">
+<p>This is default content available on homepage directly.</p>
+</div>
+ 
+<p><a href="/codes">Go back to Home</a></p>
+</div>
+
+</div>
+</body>
+</html>

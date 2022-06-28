@@ -275,6 +275,34 @@ footer a {
 				text-decoration: none;
 }
 
+/* Column Home */
+.main_column {
+  background: linear-gradient(to top left, #aebaf8 0%, #9f00ff 100%);
+  text-align: center;
+  float: left;
+  width: 100%;
+  margin-right: 2px;
+  margin-bottom: 3px;
+  padding: 50px;
+  border-radius: 2px;
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+
+.main_column:hover {
+  background: linear-gradient(to top left, #9f00ff 0%, #aebaf8 100%);
+}
+
+.main_row {
+  margin: 0px;
+}
+
+@media screen and (min-width: 600px) {
+.main_column {
+  width: 49%;
+}  
+}
+
 /* Code Page */
 .code_page {
   text-align: center;

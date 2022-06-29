@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>import html (js)</title>
+<link rel="stylesheet" href="/assets/main.css">
+</head>
+<body>
+<div class="code_page">
+<h2>import html (js)</h2>
+<p>import html without backend with only js</p>
+<textarea class="code_preview" cols="30" rows="10">
+<div import="/demo/example-1.html"></div>
+
+<!-- This code can be used in External JS -->
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    file = elmnt.getAttribute("import");
+    if (file) {
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          elmnt.removeAttribute("import");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      return;
+    }
+  }
+};
+</script>
+
+<!-- This code can't be used in External JS and must be used after the code above-->
+
+<script>
+includeHTML();
+</script>
+</textarea>
+
+<h3>Preview</h3>
+<div import="/demo/example-1.html"></div>
+
+<!-- This code can be used in External JS -->
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    file = elmnt.getAttribute("import");
+    if (file) {
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          elmnt.removeAttribute("import");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      return;
+    }
+  }
+};
+</script>
+
+<!-- This code can't be used in External JS and must be used after the code above-->
+
+<script>
+includeHTML();
+</script>
+<a href="/codes">Go back to Home</a>
+</div>
+</body>
+</html>

@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>NFTs</title>
   <link rel="stylesheet" href="/assets/main.css">
-  <script src="/assets/angular.min.js"></script>
+  <script src="/assets/main.js"></script>
 </head>
 
-<body ng-app="">
-<ng-include src="'get/header.html'"></ng-include>
+<body>
+<div katana="get/header.html"></div>
 
 	<style>
 		#loader {
@@ -43,36 +43,34 @@
 	<h2>NFTs</h2>
 	</center>
 
-<div class="nft">
-<img src="assets/Smokefallers_yellow_cover.png" width="100%">
-<p>Smokefallers Yellow</p>
-<a href="https://rarible.com/token/0xc9154424B823b10579895cCBE442d41b9Abd96Ed:41990740838955718762332147540052188698756835531355153551576315434121392291842">Get on Rarible</a>
-</div>
+<div class="nft-cover">
 
 <div class="nft">
-  <img src="assets/og.png" width="100%">
-  <p>The Smokefallers</p>
-  <a href="https://rarible.com/token/0xc9154424B823b10579895cCBE442d41b9Abd96Ed:41990740838955718762332147540052188698756835531355153551576315434121392291841">Get on Rarible</a>
-</div>
-
-<div class="nft">
-  <img src="assets/tape.png" width="100%">
-  <p>Smokefallers - Tape on Mouth</p>
-  <a href="https://rarible.com/token/0xc9154424B823b10579895cCBE442d41b9Abd96Ed:41990740838955718762332147540052188698756835531355153551576315434121392291843">Get on Rarible</a>
-</div>
-
-<div class="nft">
-  <img src="assets/laugh.png" width="100%">
-  <p>Smokefallers - Laugh</p>
-  <a href="https://rarible.com/token/0xc9154424B823b10579895cCBE442d41b9Abd96Ed:41990740838955718762332147540052188698756835531355153551576315434121392291844">Get on Rarible</a>
-</div>
-
-<div class="nft">
-  <img src="assets/quote.png" width="100%">
+  <img src="assets/quote.png">
   <p>Holy Quote</p>
-  <a href="https://rarible.com/token/0xB66a603f4cFe17e3D27B87a8BfCaD319856518B8:41990740838955718762332147540052188698756835531355153551576315434121392291841">Get on Rarible</a>
+  <a href="#">Get on Rarible</a>
 </div>
 
+<div class="nft">
+  <img src="assets/og.png">
+  <p>The Smokefallers - Original</p>
+  <a href="#">Get on Rarible</a>
+</div>
+
+<div class="nft">
+  <img src="assets/tape.png">
+  <p>Smokefallers - Tape on Mouth</p>
+  <a href="#">Get on Rarible</a>
+</div>
+
+<div class="nft">
+  <img src="assets/laugh.png">
+  <p>Smokefallers - Laugh</p>
+  <a href="#">Get on Rarible</a>
+</div>
+</div>
+
+<div katana="get/footer.html"></div>
 	<script>
 		document.onreadystatechange = function() {
 			if (document.readyState !== "complete") {
@@ -87,10 +85,9 @@
 				"main").style.visibility = "visible";
 			}
 		};
+includeHTML();
 	</script>
 </main>
 
-
-<ng-include src="'get/footer.html'"></ng-include>
 </body>
 </html>

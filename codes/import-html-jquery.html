@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/assets/main.css">
+<title>import html (jquery)</title>
+</head>
+<body>
+<div class="code_page">
+<h2>import html (jquery)</h2>
+<p>import html easily using jquery </p>
+
+<textarea class="code_preview" cols="30" rows="10">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<div data-includeHTML="_/demo/example-1.html"></div>
+
+<script>
+    $(document).ready(function () {
+        $("div[data-includeHTML]").each(function () {                
+            $(this).load($(this).attr("data-includeHTML"));
+        });
+    });
+</script>
+</textarea>
+
+<h3>Preview</h3>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<div data-includeHTML="/demo/example-1.html"></div>
+
+<a href="/codes/">Go back to Home</a>
+
+<script>
+    $(document).ready(function () {
+        $("div[data-includeHTML]").each(function () {                
+            $(this).load($(this).attr("data-includeHTML"));
+        });
+    });
+</script>
+</div>
+</body>
+</html>

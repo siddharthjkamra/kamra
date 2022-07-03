@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>disable right click</title>
+<link rel="stylesheet" href="/assets/main.css">
+</head>
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+<div class="code_page">
+<h2>disable right click</h2>
+<p>three ways of disabling right click</p>
+<h3>1. Native HTML</h3>
+<textarea class="code_preview" cols="30" rows="10">
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+  
+<p>Your content should be here</p>
+
+</body>
+</textarea>
+
+<h3>2. Native JS</h3>
+<textarea class="code_preview" cols="30" rows="10">
+<script>
+document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
+</textarea>
+
+<h3>3. jQuery</h3>
+<textarea class="code_preview" cols="30" rows="10">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(function() {
+$(this).bind("contextmenu",
+function(e) {
+e.preventDefault();
+});
+}); 
+</script>
+</head>
+
+<body>
+<p>Your content should be here</p>
+</body>
+</textarea>
+
+<h3>Preview</h3>
+<p>We are using Native HTML way, you can't copy code. You have to write by yourself. I recommend first method because other two won't work in case of Javascript disabled. Other two can be used If you use noscript method.</p>
+</div>
+</body>
+</html>
